@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core">
+      <UniqueIdentifier>{37e2262d-a033-4fd1-be61-c28c60e54f11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\CSVparser">
+      <UniqueIdentifier>{ff882843-8ae7-43fa-8068-08b0a9931e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\custom">
+      <UniqueIdentifier>{583e73f0-a377-44f1-a82b-cde4df4c2436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\db">
+      <UniqueIdentifier>{88b61470-be5f-4f97-a9ee-ab6c234b38ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\sqlite">
+      <UniqueIdentifier>{06334f48-0368-489c-a9e1-a1565596edc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\tcp">
+      <UniqueIdentifier>{6bf61abd-e762-4832-927d-82daa7ae7af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\core\web">
+      <UniqueIdentifier>{33a10563-fcfe-4cce-8d89-2cc90ce55d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\crusade">
+      <UniqueIdentifier>{40a6263c-f0b2-44c6-8bc4-032852642904}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\data">
+      <UniqueIdentifier>{570b3e6b-6494-4003-948e-6e3e858aa9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\gateWay">
+      <UniqueIdentifier>{5d640ecd-d61f-4a39-9664-72ef7b560e88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\guide">
+      <UniqueIdentifier>{4f8b31f5-c208-4c5e-ab63-c8ba35a7f936}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\loading">
+      <UniqueIdentifier>{7f630dfb-cb66-4cda-a13e-ed6bd4bbaaea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\manor">
+      <UniqueIdentifier>{88dad4af-c982-472f-b115-cd8b3e745abd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\popUp">
+      <UniqueIdentifier>{fd37c1af-fcef-47cc-9797-3b87338b5ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle">
+      <UniqueIdentifier>{1246f85e-9581-4259-82f5-bdb1361deb5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\notice">
+      <UniqueIdentifier>{e9af5da6-94d7-422d-9496-d8c05f1de90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\utils">
+      <UniqueIdentifier>{5960ca91-115b-45fd-9df8-d62d05cb6c75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound">
+      <UniqueIdentifier>{d86e1c10-b254-4bf7-a61e-01db7c33ace7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\CSVparser\CSVparser.cpp">
+      <Filter>src\core\CSVparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\custom\Event.cpp">
+      <Filter>src\core\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\custom\LibString.cpp">
+      <Filter>src\core\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\custom\Memories.cpp">
+      <Filter>src\core\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\db\DBConnector.cpp">
+      <Filter>src\core\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\db\DBSqlite.cpp">
+      <Filter>src\core\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\db\Table.cpp">
+      <Filter>src\core\db</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\web\Client.cpp">
+      <Filter>src\core\web</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\tcp\Client.cpp">
+      <Filter>src\core\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\tcp\NodejsClient.cpp">
+      <Filter>src\core\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\sqlite\sqlite3.c">
+      <Filter>src\core\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Achievement.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Board.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Buiding.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Crusade.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\DestroyData.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Game.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Item.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Monster.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Role.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Stage.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Talent.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Task.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\User.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gateWay\Gateway.cpp">
+      <Filter>src\gateWay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\guide\Guide.cpp">
+      <Filter>src\guide</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\loading\Loading.cpp">
+      <Filter>src\loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\custom\LibDate.cpp">
+      <Filter>src\core\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\custom\LibCode.cpp">
+      <Filter>src\core\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Mall.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\Cemetery.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\CrusadeMap.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\CrusadeMapEventManager.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\CrusadeMapPopupManager.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\EnterChoicePop.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\GobackAsk.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\Package.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\SettlementLayer.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\WildStore.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\WildTavern.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\BattleController.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\BattleLayer.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\BattleViewController.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\CombatBase.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\Monster.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\Player.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\Skills.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\SwordMove.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\core\custom\Caches.cpp">
+      <Filter>src\core\custom</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\crusade\TransGate.cpp">
+      <Filter>src\crusade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\AndroidCall.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\DeerUtils.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\DoubleClickExit.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\utils\LoadingAction.cpp">
+      <Filter>src\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\battle\BattleTextManager.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Lang.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\CollectionLayer.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\HeroChoicePopup.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\HeroLayer.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\LayerBase.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\LayerNoTouchTrans.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Manor.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\ManorMainLayer.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Ranking.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Resouce.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Settings.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Sudden.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\TextPopup.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Translate.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\VentureLayer.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\BlackMask.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\ChoicePopup.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\CommenPopup.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\DoBatch.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\MallSurePop.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\NoticePopBox.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\RankRegister.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\TouchEffect.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\notice\Tips.cpp">
+      <Filter>src\notice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\ShopRmbBatchPop.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Ranking.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Build.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\sound\SoundManager.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\MapSummary.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\Summary.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Produce.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\notice\Board.cpp">
+      <Filter>src\notice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\notice\Notice.cpp">
+      <Filter>src\notice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\popUp\Finger.cpp">
+      <Filter>src\popUp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\data\Guid.cpp">
+      <Filter>src\data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Mall.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\gateWay\DebugCommand.cpp">
+      <Filter>src\gateWay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Shop.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Talent.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\Achievement.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\notice\MsgQueue.cpp">
+      <Filter>src\notice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\manor\RmbBuyLayer.cpp">
+      <Filter>src\manor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\loading\UMLogo.cpp">
+      <Filter>src\loading</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\CSVparser\CSVparser.h">
+      <Filter>src\core\CSVparser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\custom\Event.h">
+      <Filter>src\core\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\custom\LibString.h">
+      <Filter>src\core\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\custom\Memories.h">
+      <Filter>src\core\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\db\DBConnector.h">
+      <Filter>src\core\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\db\DBSqlite.h">
+      <Filter>src\core\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\db\Table.h">
+      <Filter>src\core\db</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\web\Client.h">
+      <Filter>src\core\web</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\tcp\Client.h">
+      <Filter>src\core\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\tcp\NodejsClient.h">
+      <Filter>src\core\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\sqlite\sqlite3.h">
+      <Filter>src\core\sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Achievement.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Board.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Building.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Crusade.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\DestroyData.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Game.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Item.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Monster.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Role.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Stage.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Talent.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Task.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\User.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gateWay\Gateway.h">
+      <Filter>src\gateWay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\guide\Guide.h">
+      <Filter>src\guide</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\loading\Loading.h">
+      <Filter>src\loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GlobalMacros.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\custom\LibDate.h">
+      <Filter>src\core\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\custom\LibCode.h">
+      <Filter>src\core\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Mall.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\Cemetery.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\CrusadeMap.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\CrusadeMapEventManager.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\CrusadeMapPopupManager.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\EnterChoicePop.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\GobackAsk.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\Package.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\SettlementLayer.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\WildStore.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\WildTavern.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\BattleController.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\BattleControllerDelegate.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\BattleLayer.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\BattleViewController.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\CombatBase.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\Monster.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\Player.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\Skills.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\SwordMove.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\core\custom\Caches.h">
+      <Filter>src\core\custom</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\crusade\TransGate.h">
+      <Filter>src\crusade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gateWay\GateWayDelegate.h">
+      <Filter>src\gateWay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\AndroidCall.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\ButtonAction.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\DeerUtils.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\DoubleClickExit.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\utils\LoadingAction.h">
+      <Filter>src\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\battle\BattleTextManager.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Lang.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\CollectionLayer.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\HeroChoicePopup.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\HeroLayer.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\LayerBase.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\LayerNoTouchTrans.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Manor.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\ManorMainLayer.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Ranking.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Resouce.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Settings.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Sudden.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\TextPopup.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Translate.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\VentureLayer.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\BlackMask.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\ChoicePopup.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\CommenPopup.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\DoBatch.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\MallSurePop.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\NoticePopBox.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\RankRegister.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\TouchEffect.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\notice\Tips.h">
+      <Filter>src\notice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\ShopRmbBatchPop.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Ranking.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Build.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\sound\SoundManager.h">
+      <Filter>src\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\MapSummary.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\Summary.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Produce.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\notice\Board.h">
+      <Filter>src\notice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\notice\Notice.h">
+      <Filter>src\notice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\popUp\Finger.h">
+      <Filter>src\popUp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\data\Guid.h">
+      <Filter>src\data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Mall.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\gateWay\DebugCommand.h">
+      <Filter>src\gateWay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Shop.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Talent.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\Achievement.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\notice\MsgQueue.h">
+      <Filter>src\notice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\manor\RmbBuyLayer.h">
+      <Filter>src\manor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\loading\UMLogo.h">
+      <Filter>src\loading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

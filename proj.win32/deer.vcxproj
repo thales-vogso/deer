@@ -1,0 +1,352 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{76A39BB2-9B84-4C65-98A5-654D86B86F2A}</ProjectGuid>
+    <RootNamespace>test_win32</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\\cocos\2d\cocos2dx.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\\cocos\2d\cocos2dx.props" />
+    <Import Project="$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration).win32\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration).win32\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\cocos\audio\include;$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\external;$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\external\chipmunk\include\chipmunk;$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\extensions;$(COCOS_FRAMEWORKS)\cocos2d-x-3.5;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ObjectFileName>$(IntDir)/%(RelativeDir)</ObjectFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\prebuilt\win32\*.*" "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\cocos\audio\include;$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\external;$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\external\chipmunk\include\chipmunk;$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\extensions;..\Classes;..;%(AdditionalIncludeDirectories);$(_COCOS_HEADER_WIN32_BEGIN);$(_COCOS_HEADER_WIN32_END)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libcurl_imp.lib;websockets.lib;%(AdditionalDependencies);$(_COCOS_LIB_WIN32_BEGIN);$(_COCOS_LIB_WIN32_END)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);%(AdditionalLibraryDirectories);$(_COCOS_LIB_PATH_WIN32_BEGIN);$(_COCOS_LIB_PATH_WIN32_END)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>if not exist "$(OutDir)" mkdir "$(OutDir)"
+xcopy /Y /Q "$(COCOS_FRAMEWORKS)\cocos2d-x-3.5\prebuilt\win32\*.*" "$(OutDir)"
+xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
+</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\battle\BattleController.cpp" />
+    <ClCompile Include="..\Classes\battle\BattleLayer.cpp" />
+    <ClCompile Include="..\Classes\battle\BattleTextManager.cpp" />
+    <ClCompile Include="..\Classes\battle\BattleViewController.cpp" />
+    <ClCompile Include="..\Classes\battle\CombatBase.cpp" />
+    <ClCompile Include="..\Classes\battle\Monster.cpp" />
+    <ClCompile Include="..\Classes\battle\Player.cpp" />
+    <ClCompile Include="..\Classes\battle\Skills.cpp" />
+    <ClCompile Include="..\Classes\battle\SwordMove.cpp" />
+    <ClCompile Include="..\Classes\core\CSVparser\CSVparser.cpp" />
+    <ClCompile Include="..\Classes\core\custom\Caches.cpp" />
+    <ClCompile Include="..\Classes\core\custom\Event.cpp" />
+    <ClCompile Include="..\Classes\core\custom\LibCode.cpp" />
+    <ClCompile Include="..\Classes\core\custom\LibDate.cpp" />
+    <ClCompile Include="..\Classes\core\custom\LibString.cpp" />
+    <ClCompile Include="..\Classes\core\custom\Memories.cpp" />
+    <ClCompile Include="..\Classes\core\db\DBConnector.cpp" />
+    <ClCompile Include="..\Classes\core\db\DBSqlite.cpp" />
+    <ClCompile Include="..\Classes\core\db\Table.cpp" />
+    <ClCompile Include="..\Classes\core\sqlite\sqlite3.c" />
+    <ClCompile Include="..\Classes\core\tcp\Client.cpp" />
+    <ClCompile Include="..\Classes\core\tcp\NodejsClient.cpp" />
+    <ClCompile Include="..\Classes\core\web\Client.cpp" />
+    <ClCompile Include="..\Classes\crusade\Cemetery.cpp" />
+    <ClCompile Include="..\Classes\crusade\CrusadeMap.cpp" />
+    <ClCompile Include="..\Classes\crusade\CrusadeMapEventManager.cpp" />
+    <ClCompile Include="..\Classes\crusade\CrusadeMapPopupManager.cpp" />
+    <ClCompile Include="..\Classes\crusade\EnterChoicePop.cpp" />
+    <ClCompile Include="..\Classes\crusade\GobackAsk.cpp" />
+    <ClCompile Include="..\Classes\crusade\Package.cpp" />
+    <ClCompile Include="..\Classes\crusade\SettlementLayer.cpp" />
+    <ClCompile Include="..\Classes\crusade\TransGate.cpp" />
+    <ClCompile Include="..\Classes\crusade\WildStore.cpp" />
+    <ClCompile Include="..\Classes\crusade\WildTavern.cpp" />
+    <ClCompile Include="..\Classes\data\Achievement.cpp" />
+    <ClCompile Include="..\Classes\data\Board.cpp" />
+    <ClCompile Include="..\Classes\data\Buiding.cpp" />
+    <ClCompile Include="..\Classes\data\Crusade.cpp" />
+    <ClCompile Include="..\Classes\data\DestroyData.cpp" />
+    <ClCompile Include="..\Classes\data\Game.cpp" />
+    <ClCompile Include="..\Classes\data\Guid.cpp" />
+    <ClCompile Include="..\Classes\data\Item.cpp" />
+    <ClCompile Include="..\Classes\data\Lang.cpp" />
+    <ClCompile Include="..\Classes\data\Mall.cpp" />
+    <ClCompile Include="..\Classes\data\Monster.cpp" />
+    <ClCompile Include="..\Classes\data\Ranking.cpp" />
+    <ClCompile Include="..\Classes\data\Role.cpp" />
+    <ClCompile Include="..\Classes\data\Stage.cpp" />
+    <ClCompile Include="..\Classes\data\Talent.cpp" />
+    <ClCompile Include="..\Classes\data\Task.cpp" />
+    <ClCompile Include="..\Classes\data\User.cpp" />
+    <ClCompile Include="..\Classes\gateWay\DebugCommand.cpp" />
+    <ClCompile Include="..\Classes\gateWay\Gateway.cpp" />
+    <ClCompile Include="..\Classes\guide\Guide.cpp" />
+    <ClCompile Include="..\Classes\loading\Loading.cpp" />
+    <ClCompile Include="..\Classes\loading\UMLogo.cpp" />
+    <ClCompile Include="..\Classes\manor\Achievement.cpp" />
+    <ClCompile Include="..\Classes\manor\Build.cpp" />
+    <ClCompile Include="..\Classes\manor\CollectionLayer.cpp" />
+    <ClCompile Include="..\Classes\manor\HeroChoicePopup.cpp" />
+    <ClCompile Include="..\Classes\manor\HeroLayer.cpp" />
+    <ClCompile Include="..\Classes\manor\LayerBase.cpp" />
+    <ClCompile Include="..\Classes\manor\LayerNoTouchTrans.cpp" />
+    <ClCompile Include="..\Classes\manor\Mall.cpp" />
+    <ClCompile Include="..\Classes\manor\Manor.cpp" />
+    <ClCompile Include="..\Classes\manor\ManorMainLayer.cpp" />
+    <ClCompile Include="..\Classes\manor\Produce.cpp" />
+    <ClCompile Include="..\Classes\manor\Ranking.cpp" />
+    <ClCompile Include="..\Classes\manor\Resouce.cpp" />
+    <ClCompile Include="..\Classes\manor\RmbBuyLayer.cpp" />
+    <ClCompile Include="..\Classes\manor\Settings.cpp" />
+    <ClCompile Include="..\Classes\manor\Shop.cpp" />
+    <ClCompile Include="..\Classes\manor\Sudden.cpp" />
+    <ClCompile Include="..\Classes\manor\Talent.cpp" />
+    <ClCompile Include="..\Classes\manor\TextPopup.cpp" />
+    <ClCompile Include="..\Classes\manor\Translate.cpp" />
+    <ClCompile Include="..\Classes\manor\VentureLayer.cpp" />
+    <ClCompile Include="..\Classes\notice\Board.cpp" />
+    <ClCompile Include="..\Classes\notice\MsgQueue.cpp" />
+    <ClCompile Include="..\Classes\notice\Notice.cpp" />
+    <ClCompile Include="..\Classes\notice\Tips.cpp" />
+    <ClCompile Include="..\Classes\popUp\BlackMask.cpp" />
+    <ClCompile Include="..\Classes\popUp\ChoicePopup.cpp" />
+    <ClCompile Include="..\Classes\popUp\CommenPopup.cpp" />
+    <ClCompile Include="..\Classes\popUp\DoBatch.cpp" />
+    <ClCompile Include="..\Classes\popUp\Finger.cpp" />
+    <ClCompile Include="..\Classes\popUp\MallSurePop.cpp" />
+    <ClCompile Include="..\Classes\popUp\MapSummary.cpp" />
+    <ClCompile Include="..\Classes\popUp\NoticePopBox.cpp" />
+    <ClCompile Include="..\Classes\popUp\RankRegister.cpp" />
+    <ClCompile Include="..\Classes\popUp\ShopRmbBatchPop.cpp" />
+    <ClCompile Include="..\Classes\popUp\Summary.cpp" />
+    <ClCompile Include="..\Classes\popUp\TouchEffect.cpp" />
+    <ClCompile Include="..\Classes\sound\SoundManager.cpp" />
+    <ClCompile Include="..\Classes\utils\AndroidCall.cpp" />
+    <ClCompile Include="..\Classes\utils\DeerUtils.cpp" />
+    <ClCompile Include="..\Classes\utils\DoubleClickExit.cpp" />
+    <ClCompile Include="..\Classes\utils\LoadingAction.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\battle\BattleController.h" />
+    <ClInclude Include="..\Classes\battle\BattleControllerDelegate.h" />
+    <ClInclude Include="..\Classes\battle\BattleLayer.h" />
+    <ClInclude Include="..\Classes\battle\BattleTextManager.h" />
+    <ClInclude Include="..\Classes\battle\BattleViewController.h" />
+    <ClInclude Include="..\Classes\battle\CombatBase.h" />
+    <ClInclude Include="..\Classes\battle\Monster.h" />
+    <ClInclude Include="..\Classes\battle\Player.h" />
+    <ClInclude Include="..\Classes\battle\Skills.h" />
+    <ClInclude Include="..\Classes\battle\SwordMove.h" />
+    <ClInclude Include="..\Classes\core\CSVparser\CSVparser.h" />
+    <ClInclude Include="..\Classes\core\custom\Caches.h" />
+    <ClInclude Include="..\Classes\core\custom\Event.h" />
+    <ClInclude Include="..\Classes\core\custom\LibCode.h" />
+    <ClInclude Include="..\Classes\core\custom\LibDate.h" />
+    <ClInclude Include="..\Classes\core\custom\LibString.h" />
+    <ClInclude Include="..\Classes\core\custom\Memories.h" />
+    <ClInclude Include="..\Classes\core\db\DBConnector.h" />
+    <ClInclude Include="..\Classes\core\db\DBSqlite.h" />
+    <ClInclude Include="..\Classes\core\db\Table.h" />
+    <ClInclude Include="..\Classes\core\sqlite\sqlite3.h" />
+    <ClInclude Include="..\Classes\core\tcp\Client.h" />
+    <ClInclude Include="..\Classes\core\tcp\NodejsClient.h" />
+    <ClInclude Include="..\Classes\core\web\Client.h" />
+    <ClInclude Include="..\Classes\crusade\Cemetery.h" />
+    <ClInclude Include="..\Classes\crusade\CrusadeMap.h" />
+    <ClInclude Include="..\Classes\crusade\CrusadeMapEventManager.h" />
+    <ClInclude Include="..\Classes\crusade\CrusadeMapPopupManager.h" />
+    <ClInclude Include="..\Classes\crusade\EnterChoicePop.h" />
+    <ClInclude Include="..\Classes\crusade\GobackAsk.h" />
+    <ClInclude Include="..\Classes\crusade\Package.h" />
+    <ClInclude Include="..\Classes\crusade\SettlementLayer.h" />
+    <ClInclude Include="..\Classes\crusade\TransGate.h" />
+    <ClInclude Include="..\Classes\crusade\WildStore.h" />
+    <ClInclude Include="..\Classes\crusade\WildTavern.h" />
+    <ClInclude Include="..\Classes\data\Achievement.h" />
+    <ClInclude Include="..\Classes\data\Board.h" />
+    <ClInclude Include="..\Classes\data\Building.h" />
+    <ClInclude Include="..\Classes\data\Crusade.h" />
+    <ClInclude Include="..\Classes\data\DestroyData.h" />
+    <ClInclude Include="..\Classes\data\Game.h" />
+    <ClInclude Include="..\Classes\data\Guid.h" />
+    <ClInclude Include="..\Classes\data\Item.h" />
+    <ClInclude Include="..\Classes\data\Lang.h" />
+    <ClInclude Include="..\Classes\data\Mall.h" />
+    <ClInclude Include="..\Classes\data\Monster.h" />
+    <ClInclude Include="..\Classes\data\Ranking.h" />
+    <ClInclude Include="..\Classes\data\Role.h" />
+    <ClInclude Include="..\Classes\data\Stage.h" />
+    <ClInclude Include="..\Classes\data\Talent.h" />
+    <ClInclude Include="..\Classes\data\Task.h" />
+    <ClInclude Include="..\Classes\data\User.h" />
+    <ClInclude Include="..\Classes\gateWay\DebugCommand.h" />
+    <ClInclude Include="..\Classes\gateWay\Gateway.h" />
+    <ClInclude Include="..\Classes\gateWay\GateWayDelegate.h" />
+    <ClInclude Include="..\Classes\GlobalMacros.h" />
+    <ClInclude Include="..\Classes\guide\Guide.h" />
+    <ClInclude Include="..\Classes\loading\Loading.h" />
+    <ClInclude Include="..\Classes\loading\UMLogo.h" />
+    <ClInclude Include="..\Classes\manor\Achievement.h" />
+    <ClInclude Include="..\Classes\manor\Build.h" />
+    <ClInclude Include="..\Classes\manor\CollectionLayer.h" />
+    <ClInclude Include="..\Classes\manor\HeroChoicePopup.h" />
+    <ClInclude Include="..\Classes\manor\HeroLayer.h" />
+    <ClInclude Include="..\Classes\manor\LayerBase.h" />
+    <ClInclude Include="..\Classes\manor\LayerNoTouchTrans.h" />
+    <ClInclude Include="..\Classes\manor\Mall.h" />
+    <ClInclude Include="..\Classes\manor\Manor.h" />
+    <ClInclude Include="..\Classes\manor\ManorMainLayer.h" />
+    <ClInclude Include="..\Classes\manor\Produce.h" />
+    <ClInclude Include="..\Classes\manor\Ranking.h" />
+    <ClInclude Include="..\Classes\manor\Resouce.h" />
+    <ClInclude Include="..\Classes\manor\RmbBuyLayer.h" />
+    <ClInclude Include="..\Classes\manor\Settings.h" />
+    <ClInclude Include="..\Classes\manor\Shop.h" />
+    <ClInclude Include="..\Classes\manor\Sudden.h" />
+    <ClInclude Include="..\Classes\manor\Talent.h" />
+    <ClInclude Include="..\Classes\manor\TextPopup.h" />
+    <ClInclude Include="..\Classes\manor\Translate.h" />
+    <ClInclude Include="..\Classes\manor\VentureLayer.h" />
+    <ClInclude Include="..\Classes\notice\Board.h" />
+    <ClInclude Include="..\Classes\notice\MsgQueue.h" />
+    <ClInclude Include="..\Classes\notice\Notice.h" />
+    <ClInclude Include="..\Classes\notice\Tips.h" />
+    <ClInclude Include="..\Classes\popUp\BlackMask.h" />
+    <ClInclude Include="..\Classes\popUp\ChoicePopup.h" />
+    <ClInclude Include="..\Classes\popUp\CommenPopup.h" />
+    <ClInclude Include="..\Classes\popUp\DoBatch.h" />
+    <ClInclude Include="..\Classes\popUp\Finger.h" />
+    <ClInclude Include="..\Classes\popUp\MallSurePop.h" />
+    <ClInclude Include="..\Classes\popUp\MapSummary.h" />
+    <ClInclude Include="..\Classes\popUp\NoticePopBox.h" />
+    <ClInclude Include="..\Classes\popUp\RankRegister.h" />
+    <ClInclude Include="..\Classes\popUp\ShopRmbBatchPop.h" />
+    <ClInclude Include="..\Classes\popUp\Summary.h" />
+    <ClInclude Include="..\Classes\popUp\TouchEffect.h" />
+    <ClInclude Include="..\Classes\sound\SoundManager.h" />
+    <ClInclude Include="..\Classes\utils\AndroidCall.h" />
+    <ClInclude Include="..\Classes\utils\ButtonAction.h" />
+    <ClInclude Include="..\Classes\utils\DeerUtils.h" />
+    <ClInclude Include="..\Classes\utils\DoubleClickExit.h" />
+    <ClInclude Include="..\Classes\utils\LoadingAction.h" />
+    <ClInclude Include="main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

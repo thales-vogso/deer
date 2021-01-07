@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>map/mapbackicon/map_fqbj_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_fqbj_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{64,0},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_arsl_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{128,0},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_arsl_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{192,0},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_crhs_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,64},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_crhs_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{64,64},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_hsbxxx_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{128,64},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_hsbxxx_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{192,64},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_ttyhmxx_1.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,128},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+			<key>map/mapbackicon/map_ttyhmxx_2.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{64,128},{64,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false />
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+		</dict>
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>textureFileName</key>
+			<string>mapblock.png</string>
+			<key>realTextureFileName</key>
+			<string>mapblock.png</string>
+			<key>size</key>
+			<string>{256,192}</string>
+		</dict>
+		<key>texture</key>
+		<dict>
+			<key>width</key>
+			<integer>256</integer>
+			<key>height</key>
+			<integer>192</integer>
+		</dict>
+	</dict>
+</plist>

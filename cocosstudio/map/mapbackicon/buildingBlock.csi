@@ -1,0 +1,50 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="buildingBlock" Type="Plist" ID="ab93ccfa-e756-420c-9be4-18c4e7a19608" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="False" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="map/mapbackicon/1.png" />
+      <FilePathData Path="map/mapbackicon/3.png" />
+      <FilePathData Path="map/mapbackicon/5.png" />
+      <FilePathData Path="map/mapbackicon/7.png" />
+      <FilePathData Path="map/mapbackicon/9.png" />
+      <FilePathData Path="map/mapbackicon/11.png" />
+      <FilePathData Path="map/mapbackicon/13.png" />
+      <FilePathData Path="map/mapbackicon/15.png" />
+      <FilePathData Path="map/mapbackicon/17.png" />
+      <FilePathData Path="map/mapbackicon/19.png" />
+      <FilePathData Path="map/mapbackicon/21.png" />
+      <FilePathData Path="map/mapbackicon/23.png" />
+      <FilePathData Path="map/mapbackicon/25.png" />
+      <FilePathData Path="map/mapbackicon/27.png" />
+      <FilePathData Path="map/mapbackicon/29.png" />
+      <FilePathData Path="map/mapbackicon/31.png" />
+      <FilePathData Path="map/mapbackicon/33.png" />
+      <FilePathData Path="map/mapbackicon/35.png" />
+      <FilePathData Path="map/mapbackicon/37.png" />
+      <FilePathData Path="map/mapbackicon/39.png" />
+      <FilePathData Path="map/mapbackicon/41.png" />
+      <FilePathData Path="map/mapbackicon/43.png" />
+      <FilePathData Path="map/mapbackicon/45.png" />
+      <FilePathData Path="map/mapbackicon/47.png" />
+      <FilePathData Path="map/mapbackicon/49.png" />
+      <FilePathData Path="map/mapbackicon/51.png" />
+      <FilePathData Path="map/mapbackicon/53.png" />
+      <FilePathData Path="map/mapbackicon/55.png" />
+      <FilePathData Path="map/mapbackicon/57.png" />
+      <FilePathData Path="map/mapbackicon/59.png" />
+      <FilePathData Path="map/mapbackicon/61.png" />
+      <FilePathData Path="map/mapbackicon/63.png" />
+      <FilePathData Path="map/mapbackicon/65.png" />
+      <FilePathData Path="map/mapbackicon/67.png" />
+      <FilePathData Path="map/mapbackicon/69.png" />
+      <FilePathData Path="map/mapbackicon/71.png" />
+      <FilePathData Path="map/mapbackicon/73.png" />
+      <FilePathData Path="map/mapbackicon/75.png" />
+      <FilePathData Path="map/mapbackicon/77.png" />
+      <FilePathData Path="map/mapbackicon/79.png" />
+      <FilePathData Path="map/mapbackicon/81.png" />
+      <FilePathData Path="map/mapbackicon/83.png" />
+    </ImageFiles>
+    <MaxSize Width="1024" Height="2048" />
+  </Content>
+</PlistInfoProjectFile>

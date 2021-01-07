@@ -1,0 +1,53 @@
+id,en-us,zh-cn
+110101,$,¥
+110102,cost,花费
+110103,dollar,元
+110104,crystal,钻石
+110201,HP,生命
+110202,Skill,技能
+110203,ATK,威力
+110204,SPD,速度
+110205,BUFF,附加效果
+120101,"no more Androids",你没有更多机器人了
+120102,gather,产出
+120103,Android,机器人
+120104,"Androids have gathered",机器人为您生产了
+120105,total,共
+120106,"during the time you left",在你离开的这段时间里
+120201,thanks,好，谢谢
+120202,lock,不足
+130301,"Please enter your name",请先输入你的大名
+130302,"Please make sure the number of %s",请确定购买%s的数量
+130303,"Competitive ranking",竞技榜
+130304,"Explore ranking",探索榜
+130305,"Exploration degree of map",地图探索度
+130306,"Space Babel",太空巴别塔
+130307,"no more Golds",金币不足
+130308,"You have purchased %s X%s!",你购买了%sX%s
+130309,"No goods can be sold!",没有可卖出的商品
+130310,"You sold the %sX%d","你卖出了 %sX%d"
+130311,"Businessmen don't buy %s",商人不收购%s
+130312,"[Here is the HQ : Bravery , remember to go back where you from]",[这里是Bravery勇气号，记住从哪里出发就要回到哪里]
+130313,"[Touch to next]",[点击屏幕继续]
+130314,"[This is Space Energy, we cannot without it]",[这是太空能量，没有它我们寸步难行]
+130315,"[Now, explore the new planet]",[现在，探索这个未知的星球吧！]
+130316,"Produced %d  %s","制作了%d个 %s"
+130317,"Lack of material",缺少原材料
+130318,"Recover HP+%g",生命恢复+%g
+130319,"HP reduce%g",受到伤害%g
+130320,"YOU LOSE!",失败啦！
+130321,"YOU WIN!",胜利啦！
+130322,"Please hold the goods for 0.3 seconds",请按住物品0.3秒
+130323,"[%d Androids have nothing to do now]",[庇护所的机器人有%d名正闲着无所事事]
+130324,"[Please give them some works to do]",[请分配给他们一些工作吧]
+130325,,[已占领的贫民窟可以作为太空能量补给站]
+130326,,[再次进入可收集太空能量]
+130327,,太空能量已严重不足！
+130328,,点击右上角按键可立即回城。
+130329,,[太空能量为0时，出征队伍会团灭！]
+210101,revived,复活了
+210102,"need Seele",缺少灵核
+210103,burial,安葬了
+210104,a,一个
+220101,"need pick important item up!",还有重要物品未拾取!
+220102,"package is full",背包已满

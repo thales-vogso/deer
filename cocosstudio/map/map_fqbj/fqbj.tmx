@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="25" height="25" tilewidth="64" tileheight="64" nextobjectid="1">
+ <tileset firstgid="1" name="mapBackRound" tilewidth="64" tileheight="64" spacing="1" margin="1">
+  <image source="../mapBackRound.png" width="198" height="264"/>
+ </tileset>
+ <tileset firstgid="13" name="iconMap" tilewidth="60" tileheight="60">
+  <image source="../iconMap.png" width="360" height="540"/>
+ </tileset>
+ <layer name="backLayer" width="25" height="25">
+  <data encoding="base64" compression="zlib">
+   eJztxTENAAAIA7A9w79ksEHSo2mTzKlt27bfvLanDW4=
+  </data>
+ </layer>
+ <layer name="buildLayer" width="25" height="25" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzjZWBgsGOgLbCjgx2jYBSMglEwCkbBKBgFIwkAAG8pAMg=
+  </data>
+ </layer>
+ <layer name="fogLayer" width="25" height="25" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJwTZWBgEIViWgFRBtrbAbNnFIyCUTAKRsEoGAWjYCQAAHpLAJQ=
+  </data>
+ </layer>
+</map>

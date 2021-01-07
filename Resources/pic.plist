@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>jiemian/anjiujindutiao.png</string>
+	<string>jiemian/baisejintutiao.png</string>
+	<string>jiemian/biaoqian.png</string>
+	<string>jiemian/chengjiu.png</string>
+	<string>jiemian/daxuetiao.png</string>
+	<string>jiemian/fanhui.png</string>
+	<string>jiemian/gou.png</string>
+	<string>jiemian/huichengbiaoqian.png</string>
+	<string>jiemian/jiahao.png</string>
+	<string>jiemian/jiahaoguang.png</string>
+	<string>jiemian/jianhaoguang.png</string>
+	<string>jiemian/jianhao.png</string>
+	<string>jiemian/jianzao.png</string>
+	<string>jiemian/jiuguan.png</string>
+	<string>jiemian/kuozhanbao.png</string>
+	<string>jiemian/lvkuang.png</string>
+	<string>jiemian/muyuan.png</string>
+	<string>jiemian/paihangbang.png</string>
+	<string>jiemian/shangdian.png</string>
+	<string>jiemian/shengchan.png</string>
+	<string>jiemian/shezhi.png</string>
+	<string>jiemian/shuijing.png</string>
+	<string>jiemian/tanhao.png</string>
+	<string>jiemian/tanhaoguang.png</string>
+	<string>jiemian/toubiao.png</string>
+	<string>jiemian/ui_button2.png</string>
+	<string>jiemian/wuzibeijing.png</string>
+	<string>jiemian/xiaoxuetiao.png</string>
+	<string>jiemian/xing.png</string>
+	<string>jiemian/xunlian.png</string>
+	<string>jiemian/xsss.jpg</string>
+	<string>jiemian/yuandian.png</string>
+	<string>jiemian/zhankaianniuguang.png</string>
+	<string>jiemian/zhanlipin.png</string>
+	<string>jiemian/zhaomu.png</string>
+	<string>jiemian/zhezhao.png</string>
+	<string>jiemian/zhizuo.png</string>
+	<string>jiemian/ziyuanbiaoti.png</string>
+	<string>manor/image/DeerEra.png</string>
+	<string>manor/image/deerlogo_open.png</string>
+	<string>manor/image/deerlogo.png</string>
+	<string>manor/image/ui_bg2-1.png</string>
+	<string>manor/image/ui_bg2.png</string>
+	<string>manor/image/ui_button2.png</string>
+	<string>manor/image/ui_button3.png</string>
+	<string>manor/image/ui_button4.png</string>
+	<string>manor/image/ui_dot_green.png</string>
+	<string>manor/image/ui_dot_red.png</string>
+	<string>manor/image/ui_ljy.png</string>
+	<string>manor/image/ui_tree1.png</string>
+	<string>manor/image/ui_tree2.png</string>
+	<string>manor/image/ui_triangle.png</string>
+</array>
+</plist>

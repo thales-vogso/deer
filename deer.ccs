@@ -1,0 +1,287 @@
+<Solution>
+  <PropertyGroup Name="deer" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="guid">
+          <Project Name="guid.csd" Type="Layer" />
+          <Project Name="guid1.csd" Type="Layer" />
+          <Image Name="kaichang.jpg" />
+          <Image Name="lvlogo.png" />
+        </Folder>
+        <Folder Name="jiemian">
+          <Image Name="0000.png" />
+          <Project Name="achievement.csd" Type="Node" />
+          <Image Name="anjiujindutiao.png" />
+          <Image Name="anjiujindutiaochang.png" />
+          <Image Name="anniu222.png" />
+          <Image Name="anniubeijing.png" />
+          <Image Name="anniuheiquan.png" />
+          <Image Name="baisejintutiao.png" />
+          <Project Name="base.csd" Type="Node" />
+          <Image Name="biaoqian.png" />
+          <Image Name="bingshan.png" />
+          <Image Name="bingzhong.png" />
+          <Project Name="board.csd" Type="Node" />
+          <Project Name="build.csd" Type="Node" />
+          <Project Name="buildclear.csd" Type="Node" />
+          <Project Name="buildingVictory.csd" Type="Node" />
+          <Image Name="caijibeijing.png" />
+          <Project Name="cemetery.csd" Type="Node" />
+          <Project Name="changjing.csd" Type="Node" />
+          <Image Name="chengjiu.png" />
+          <Project Name="chuansongmen.csd" Type="Node" />
+          <Project Name="crusadeTavern.csd" Type="Node" />
+          <Image Name="daxuetiao.png" />
+          <Image Name="difangcd.png" />
+          <Image Name="difanggongji.png" />
+          <Project Name="encounter.csd" Type="Node" />
+          <Project Name="enterChoice.csd" Type="Node" />
+          <Image Name="fanhui.png" />
+          <Project Name="goManor.csd" Type="Node" />
+          <Image Name="gou.png" />
+          <Image Name="guaji.png" />
+          <Image Name="gushitanchu.png" />
+          <Image Name="heibeijing.png" />
+          <Project Name="hero.csd" Type="Node" />
+          <Project Name="heroUpdate.csd" Type="Layer" />
+          <Image Name="huicheng.png" />
+          <Image Name="huichengbiaoqian.png" />
+          <Image Name="jiahao.png" />
+          <Image Name="jiahaoguang.png" />
+          <Image Name="jianhao.png" />
+          <Image Name="jianhaoguang.png" />
+          <Image Name="jiantou.png" />
+          <Image Name="jiantou1.png" />
+          <Image Name="jiantou2.png" />
+          <Image Name="jiantou3.png" />
+          <Image Name="jiantou4.png" />
+          <Image Name="jianzao.png" />
+          <Image Name="jianzhu.png" />
+          <Image Name="jinbi1.png" />
+          <Image Name="jinbi2.png" />
+          <Image Name="jineng.png" />
+          <Image Name="jinenganniu.png" />
+          <Image Name="jinzhi.png" />
+          <Image Name="jiuguan.png" />
+          <Image Name="kaichangdiandian.png" />
+          <Image Name="keji.png" />
+          <Image Name="kuozhanbao.png" />
+          <Image Name="logo.png" />
+          <Image Name="lvkuang.png" />
+          <Project Name="mall.csd" Type="Node" />
+          <Project Name="mallSurePop.csd" Type="Layer" />
+          <Project Name="mapTitle.csd" Type="Node" />
+          <Image Name="mianbaoxiaoguo.png" />
+          <Image Name="muyuan.png" />
+          <Project Name="package.csd" Type="Node" />
+          <Image Name="paihangbang.png" />
+          <Project Name="paihangbangtanchuang.csd" Type="Node" />
+          <Project Name="produce.csd" Type="Node" />
+          <Project Name="produceBatch.csd" Type="Layer" />
+          <Project Name="PurchaseBatch.csd" Type="Layer" />
+          <Project Name="rank.csd" Type="Node" />
+          <Project Name="recoverAsk.csd" Type="Layer" />
+          <Project Name="recruitAsk.csd" Type="Layer" />
+          <Image Name="renminbiicon.png" />
+          <Project Name="revival.csd" Type="Node" />
+          <Project Name="rmbmall.csd" Type="Node" />
+          <Image Name="rongqijianbian.png" />
+          <Project Name="selldeny.csd" Type="Layer" />
+          <Project Name="settings.csd" Type="Node" />
+          <Image Name="shangdian.png" />
+          <Image Name="shengchan.png" />
+          <Image Name="shengyinanniu.png" />
+          <Image Name="shengyinheitiao.png" />
+          <Image Name="shengyinjindutiao.png" />
+          <Image Name="shengyintiaojiexin.png" />
+          <Image Name="shenyinyou.png" />
+          <Image Name="shenyinzuo.png" />
+          <Image Name="shezhi.png" />
+          <Project Name="shop.csd" Type="Node" />
+          <Project Name="shop_rmbtanchuang.csd" Type="Layer" />
+          <Image Name="shuijing.png" />
+          <Project Name="spoils.csd" Type="Node" />
+          <Project Name="sudden.csd" Type="Node" />
+          <Project Name="summary.csd" Type="Node" />
+          <Project Name="summaryWidth.csd" Type="Node" />
+          <Project Name="talent.csd" Type="Node" />
+          <Image Name="tanhao.png" />
+          <Image Name="tanhaoguang.png" />
+          <Image Name="tianfu.png" />
+          <Image Name="tianfu2.png" />
+          <Project Name="tips.csd" Type="Layer" />
+          <Image Name="tixing.png" />
+          <Image Name="toubiao.png" />
+          <Image Name="ui_button2.png" />
+          <Image Name="ui_button5.png" />
+          <Project Name="warehouse.csd" Type="Node" />
+          <Project Name="wildTarven.csd" Type="Node" />
+          <Project Name="wildTarvenPur.csd" Type="Node" />
+          <Image Name="wuzibeijing.png" />
+          <Image Name="xiaoanniuguang1.png" />
+          <Image Name="xiaojiantou.png" />
+          <Image Name="xiaoxuetiao.png" />
+          <Image Name="xing.png" />
+          <Image Name="xinxilanbeijing.png" />
+          <Project Name="xinxiyeqian.csd" Type="Layer" />
+          <Image Name="xsss.jpg" />
+          <Image Name="xunlian.png" />
+          <Image Name="yuandian.png" />
+          <Image Name="zhankaianniu.png" />
+          <Image Name="zhankaianniuguang.png" />
+          <Image Name="zhanlipin.png" />
+          <Image Name="zhaomu.png" />
+          <Image Name="zhaomuguang.png" />
+          <Image Name="zhezhao.png" />
+          <Image Name="zhizuo.png" />
+          <Image Name="zhuangshi.png" />
+          <Image Name="zidongzhandou.png" />
+          <Image Name="ziyuanbiaoti.png" />
+          <Image Name="zuojiantou.png" />
+        </Folder>
+        <Folder Name="loading">
+          <Project Name="loading.csd" Type="Node" />
+          <Image Name="loading_1.png" />
+          <Image Name="loading_2.png" />
+          <Image Name="loading_3.png" />
+          <Image Name="loading_4.png" />
+          <Project Name="start.csd" Type="Layer" />
+        </Folder>
+        <Folder Name="manor">
+          <Folder Name="image">
+            <Image Name="cangkudacd.png" />
+            <Image Name="cangkudiyipai.png" />
+            <Image Name="cangkuxiaocd.png" />
+            <Image Name="DeerEra.png" />
+            <Image Name="deerlogo.png" />
+            <Image Name="deerlogo_open.png" />
+            <Image Name="finger.png" />
+            <Image Name="jiahaoicon.png" />
+            <Image Name="jinbiicon.png" />
+            <Image Name="loading_1.png" />
+            <Image Name="loading_2.png" />
+            <Image Name="loading_3.png" />
+            <Image Name="loading_4.png" />
+            <Image Name="nengliangicon.png" />
+            <Image Name="ui_bg2.png" />
+            <Image Name="ui_bg2-1.png" />
+            <Image Name="ui_black.png" />
+            <Image Name="ui_button1.png" />
+            <Image Name="ui_button1_bg.png" />
+            <Image Name="ui_button2.png" />
+            <Image Name="ui_button3.png" />
+            <Image Name="ui_button4.png" />
+            <Image Name="ui_dot_green.png" />
+            <Image Name="ui_dot_red.png" />
+            <Image Name="ui_ljy.png" />
+            <Image Name="ui_tree1.png" />
+            <Image Name="ui_tree2.png" />
+            <Image Name="ui_tri1.png" />
+            <Image Name="ui_tri2.png" />
+            <Image Name="ui_tri3.png" />
+            <Image Name="ui_triangle.png" />
+            <Image Name="xiaoguanbi.png" />
+            <Image Name="zuanshiicon.png" />
+          </Folder>
+          <Project Name="button1.csd" Type="Node" />
+          <Project Name="button2.csd" Type="Node" />
+          <Project Name="button3.csd" Type="Node" />
+          <Project Name="button4.csd" Type="Node" />
+          <Project Name="button5.csd" Type="Node" />
+          <Project Name="button6.csd" Type="Node" />
+          <Project Name="button7.csd" Type="Node" />
+          <Project Name="button8.csd" Type="Node" />
+          <Project Name="cangku.csd" Type="Node" />
+          <Project Name="ck_but1.csd" Type="Node" />
+          <Project Name="ck_but2.csd" Type="Node" />
+          <Project Name="manor.csd" Type="Scene" />
+          <Project Name="triangle.csd" Type="Node" />
+        </Folder>
+        <Folder Name="map">
+          <Folder Name="mapbackicon">
+            <Image Name="1.png" />
+            <Image Name="11.png" />
+            <Image Name="13.png" />
+            <Image Name="15.png" />
+            <Image Name="17.png" />
+            <Image Name="19.png" />
+            <Image Name="21.png" />
+            <Image Name="23.png" />
+            <Image Name="25.png" />
+            <Image Name="27.png" />
+            <Image Name="29.png" />
+            <Image Name="3.png" />
+            <Image Name="31.png" />
+            <Image Name="33.png" />
+            <Image Name="35.png" />
+            <Image Name="37.png" />
+            <Image Name="39.png" />
+            <Image Name="41.png" />
+            <Image Name="43.png" />
+            <Image Name="45.png" />
+            <Image Name="47.png" />
+            <Image Name="49.png" />
+            <Image Name="5.png" />
+            <Image Name="51.png" />
+            <Image Name="53.png" />
+            <Image Name="55.png" />
+            <Image Name="57.png" />
+            <Image Name="59.png" />
+            <Image Name="61.png" />
+            <Image Name="63.png" />
+            <Image Name="65.png" />
+            <Image Name="67.png" />
+            <Image Name="69.png" />
+            <Image Name="7.png" />
+            <Image Name="71.png" />
+            <Image Name="73.png" />
+            <Image Name="75.png" />
+            <Image Name="77.png" />
+            <Image Name="79.png" />
+            <Image Name="81.png" />
+            <Image Name="83.png" />
+            <Image Name="9.png" />
+            <PlistInfo Name="buildingBlock.csi" Type="Plist" />
+            <Image Name="map_ahjy_1.png" />
+            <Image Name="map_ahjy_2.png" />
+            <Image Name="map_arsl_1.png" />
+            <Image Name="map_arsl_2.png" />
+            <Image Name="map_crhs_1.png" />
+            <Image Name="map_crhs_2.png" />
+            <Image Name="map_ddksy_1.png" />
+            <Image Name="map_ddksy_2.png" />
+            <Image Name="map_fqbj_1.png" />
+            <Image Name="map_fqbj_2.png" />
+            <Image Name="map_glstsx_1.png" />
+            <Image Name="map_glstsx_2.png" />
+            <Image Name="map_hsbxxx_1.png" />
+            <Image Name="map_hsbxxx_2.png" />
+            <Image Name="map_ldsd_1.png" />
+            <Image Name="map_ldsd_2.png" />
+            <Image Name="map_mtldyj_1.png" />
+            <Image Name="map_mtldyj_2.png" />
+            <Image Name="map_osdg_1.png" />
+            <Image Name="map_osdg_2.png" />
+            <Image Name="map_rqzmwx_1.png" />
+            <Image Name="map_rqzmwx_2.png" />
+            <Image Name="map_ttyhmxx_1.png" />
+            <Image Name="map_ttyhmxx_2.png" />
+            <PlistInfo Name="mapblock.csi" Type="Plist" />
+          </Folder>
+          <Image Name="map_bg.jpg" />
+          <Image Name="map_black.png" />
+          <Image Name="map_white.png" />
+          <Image Name="mist.png" />
+          <Image Name="WOW.png" />
+        </Folder>
+        <Folder Name="paticles">
+          <PlistParticleFile Name="bloodadd.plist" />
+          <Image Name="bloodadd.png" />
+          <PlistParticleFile Name="deerback.plist" />
+        </Folder>
+        <Fnt Name="weiruanyahei.fnt" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

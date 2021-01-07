@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <array>
+    <dict>
+      <key>user</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user` (
+  `uid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(20) NOT NULL DEFAULT 0,
+  `gold` integer NOT NULL DEFAULT 0,
+  `ip` char(16) NOT NULL DEFAULT '0.0.0.0',
+  `dev` varchar(200) NOT NULL DEFAULT 0,
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX uk on `user` (`name`)
+      ]]>
+      </string>
+      <key>user_device</key>
+      <string>
+        <![CDATA[
+CREATE TABLE IF NOT EXISTS `user_device` (
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `user_id` integer NOT NULL DEFAULT 0,
+  `dev` varchar(200) NOT NULL DEFAULT 0,
+  `ip` char(16) NOT NULL DEFAULT '0.0.0.0',
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+)
+      ]]>
+      </string>
+      <key>user_setting</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_setting` (
+  `uid` integer PRIMARY KEY,
+  `bgm` integer NOT NULL DEFAULT 50,
+  `se` integer NOT NULL DEFAULT 50,
+  `guide` integer NOT NULL DEFAULT 0,
+  `cguide` integer NOT NULL DEFAULT 110101, 
+  `first` integer NOT NULL DEFAULT 1,
+  `guidTxt` BOOL NOT NULL DEFAULT FALSE,
+  `rmbShow` BOOL NOT NULL DEFAULT FALSE,
+  `libao` integer NOT NULL DEFAULT 1,
+  `firstlevel` BOOL NOT NULL DEFAULT TRUE,
+  `auto` integer NOT NULL DEFAULT 0
+  
+)
+    ]]>
+      </string> 
+      <key>user_guid</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_guid` (
+  `gid` integer PRIMARY KEY,
+  `cstep` integer NOT NULL DEFAULT 0,
+  `tstep` integer NOT NULL DEFAULT 1
+)
+    ]]>
+      </string>     
+      <key>user_game</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_game` (
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `uid` integer NOT NULL DEFAULT 0,
+  `stage` integer NOT NULL DEFAULT 0,
+  `score` integer NOT NULL DEFAULT 0,
+  `time` integer NOT NULL DEFAULT 0,
+  `useTimeItem` bool NOT NULL DEFAULT FALSE,
+  `useRage` bool NOT NULL DEFAULT FALSE
+);CREATE UNIQUE INDEX `user_game_uid` on `user_game` (`uid`)
+      ]]>
+      </string>
+      <key>user_game_log</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_game_log` (
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `user_game_id` integer NOT NULL DEFAULT 0,
+  `stage` integer NOT NULL DEFAULT 0,
+  `score` integer NOT NULL DEFAULT 0,
+  `time` integer NOT NULL DEFAULT 0
+);CREATE UNIQUE INDEX `user_game_uinque` on `user_game_log` (`user_game_id`, `stage`)
+      ]]>
+      </string>
+      <key>lang</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `lang` (
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `en-us` varchar(100) NOT NULL DEFAULT 0,
+  `zh-cn` varchar(100) NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>tips</key>
+      <string>
+        <![CDATA[
+	CREATE TABLE `tips` (
+  	`iid` integer PRIMARY KEY AUTOINCREMENT,
+  	`name` varchar(100) NOT NULL DEFAULT 0,
+  	`summary` text NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>item</key>
+      <string>
+        <![CDATA[
+CREATE TABLE item( 
+	iid integer PRIMARY KEY AUTOINCREMENT,
+	name varchar(100) NOT NULL DEFAULT 0,
+  summary text NOT NULL DEFAULT 0,
+	level integer NOT NULL DEFAULT 0,
+	price integer NOT NULL DEFAULT 0,
+	space integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>user_item</key>
+      <string>
+        <![CDATA[
+CREATE TABLE user_item( 
+	id  integer PRIMARY KEY AUTOINCREMENT,
+  uid    integer    NOT NULL default 0,
+	iid    integer    NOT NULL default 0,
+	amount integer    NOT NULL default 0
+);CREATE UNIQUE INDEX `user_item_unique` on `user_item` (`uid`, `iid`)
+      ]]>
+      </string>
+      <key>produce</key>
+      <string>
+        <![CDATA[
+CREATE TABLE produce( 
+	produce_iid    integer    NOT NULL default 0,
+	material_iid    integer    NOT NULL default 0,
+	amount          integer    NOT NULL default 0
+);CREATE UNIQUE INDEX `produce_unique` on `produce` (`produce_iid`, `material_iid`)
+      ]]>
+      </string>
+      <key>user_product</key>
+      <string>
+        <![CDATA[
+CREATE TABLE user_product( 
+	uid    integer    NOT NULL default 0,
+	iid    integer    NOT NULL default 0,
+    mdate  datetime   NOT NULL default '0000-00-00 00:00:00',
+ 	cdate  datetime     NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_product_unique` on `user_product` (`uid`, `iid`)
+      ]]>
+      </string>
+      <key>item_gather</key>
+      <string>
+        <![CDATA[
+CREATE TABLE item_gather( 
+  `tool_iid` integer NOT NULL DEFAULT 0,
+  `gather_iid` integer NOT NULL DEFAULT 0,
+  `amount` integer NOT NULL DEFAULT 0
+);CREATE UNIQUE INDEX `item_gather_unique` on `item_gather` (`tool_iid`, `gather_iid`)
+      ]]>
+      </string>
+      <key>item_mint</key>
+      <string>
+        <![CDATA[
+CREATE TABLE item_mint( 
+  `iid` integer PRIMARY KEY AUTOINCREMENT,
+  `amount` integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>item_package</key>
+      <string>
+        <![CDATA[
+CREATE TABLE item_package( 
+  `iid` integer PRIMARY KEY AUTOINCREMENT,
+  `amount` integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>item_carriage</key>
+      <string>
+        <![CDATA[
+CREATE TABLE item_carriage( 
+  `iid` integer PRIMARY KEY AUTOINCREMENT,
+  `amount` integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>item_factory</key>
+      <string>
+        <![CDATA[
+CREATE TABLE item_factory( 
+  `iid` integer PRIMARY KEY AUTOINCREMENT,
+  `time` integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>item_drug</key>
+      <string>
+        <![CDATA[
+CREATE TABLE item_drug( 
+  `iid` integer PRIMARY KEY AUTOINCREMENT,
+  `amount` integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>talent</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `talent`( 
+  `talent_id` integer PRIMARY KEY AUTOINCREMENT,
+  `name`  varchar(200) NOT NULL DEFAULT "",
+  `type` integer NOT NULL DEFAULT 0,
+  `amount` integer NOT NULL DEFAULT 0,
+  `summary` varchar(200) NOT NULL DEFAULT ""
+)
+      ]]>
+      </string>
+      <key>buff</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `buff`( 
+  `buff_id` integer PRIMARY KEY AUTOINCREMENT,
+  `name`  varchar(200) NOT NULL DEFAULT "",
+  `summary` varchar(200) NOT NULL DEFAULT ""
+)
+      ]]>
+      </string>
+      <key>talent_buff</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `talent_buff`( 
+  `talent_id` integer NOT NULL DEFAULT 0,
+  `buff_id` integer NOT NULL DEFAULT 0,
+  `value` float NOT NULL DEFAULT 0.0
+);CREATE UNIQUE INDEX `talent_buff_unique` on `talent_buff` (`talent_id`, `buff_id`)
+      ]]>
+      </string>
+      <key>user_talent</key>
+      <string>
+        <![CDATA[
+CREATE TABLE user_talent( 
+  `uid` integer NOT NULL default 0,
+  `talent_id` integer NOT NULL default 0,
+  `cdate` datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_talent_unique` on `user_talent` (`uid`, `talent_id`)
+      ]]>
+      </string>
+      <key>achievement</key>
+      <string>
+        <![CDATA[
+CREATE TABLE achievement( 
+  `aid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL DEFAULT "",
+  `summary` varchar(200) NOT NULL DEFAULT "",
+  `level` integer NOT NULL DEFAULT 0,
+  `point` integer NOT NULL DEFAULT 0,
+  `cid` integer NOT NULL DEFAULT 0,
+  `condition` integer NOT NULL DEFAULT 0,
+  `type` integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>user_achievement</key>
+      <string>
+        <![CDATA[
+CREATE TABLE user_achievement ( 
+  `uid` integer NOT NULL default 0,
+  `aid` integer NOT NULL default 0,
+  `cdate` datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_achievement_unique` on `user_achievement` (`uid`, `aid`)
+      ]]>
+      </string>
+      <key>counter</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `counter`( 
+  `cid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL DEFAULT "",
+  `summary` varchar(200) NOT NULL DEFAULT ""
+)
+      ]]>
+      </string>
+      <key>user_counter</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_counter` ( 
+  `uid` integer NOT NULL default 0,
+  `cid` integer NOT NULL default 0,
+  `amount` integer NOT NULL default 0,
+  `mdate` datetime NOT NULL default '0000-00-00 00:00:00',
+  `cdate` datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_counter_unique` on `user_counter` (`uid`, `cid`)
+      ]]>
+      </string>
+      <key>building</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `building`( 
+  `bid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(100) NOT NULL default "",
+  `summary` varchar(200) NOT NULL default ""
+)
+      ]]>
+      </string>
+      <key>worker</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `worker`( 
+  `wid` integer PRIMARY KEY AUTOINCREMENT,
+  `bid` integer NOT NULL default 0,
+  `name` varchar(100) NOT NULL default "",
+  `summary` varchar(200) NOT NULL default ""
+)
+      ]]>
+      </string>
+      <key>worker_gain</key>
+      <string>
+        <![CDATA[
+CREATE TABLE worker_gain( 
+  `wid` integer NOT NULL default 0,
+  `iid` integer NOT NULL default 0,
+  `amount` integer NOT NULL default 0
+);CREATE UNIQUE INDEX `worker_gain_unique` on `worker_gain` (`wid`, `iid`)
+      ]]>
+      </string>
+      <key>user_worker</key>
+      <string>
+        <![CDATA[
+CREATE TABLE user_worker( 
+  uid integer NOT NULL default 0,
+  wid integer NOT NULL default 0,
+  amount integer NOT NULL default 0,
+  mdate datetime NOT NULL default '0000-00-00 00:00:00',
+  cdate datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_worker_unique` on `user_worker` (`uid`, `wid`)
+      ]]>
+      </string>
+      <key>user_build</key>
+      <string>
+        <![CDATA[
+CREATE TABLE user_build( 
+  uid integer NOT NULL default 0,
+  bid integer NOT NULL default 0,
+  amount integer NOT NULL default 0,
+  mdate datetime NOT NULL default '0000-00-00 00:00:00',
+  cdate datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_build_unique` on `user_build` (`uid`, `bid`)
+      ]]>
+      </string>
+      <key>build</key>
+      <string>
+        <![CDATA[
+CREATE TABLE build( 
+  bid     integer    NOT NULL default 0,
+  iid     integer    NOT NULL default 0,
+  amount  integer     NOT NULL default 0
+);CREATE UNIQUE INDEX `build_unique` on `build` (`bid`, `iid`)
+      ]]>
+      </string>
+      <key>user_gain</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_gain` (
+  `uid` integer PRIMARY KEY,
+  `gather_expire` integer NOT NULL DEFAULT 0,
+  `gain_expire` integer NOT NULL DEFAULT 0
+)
+      ]]>
+      </string>
+      <key>shop</key>
+      <string>
+        <![CDATA[
+CREATE TABLE shop( 
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `fid` integer NOT NULL default 0,
+  `iid` integer NOT NULL default 0,
+  `price` integer NOT NULL default 0,
+  `rmb` float NOT NULL default 0,
+  `disposable` integer NOT NULL default 0
+);CREATE UNIQUE INDEX `shop_unique` on `shop` (`fid`, `iid`)
+      ]]>
+      </string>
+      <key>user_shop</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_shop`( 
+  `uid` integer NOT NULL default 0,
+  `iid` integer NOT NULL default 0,
+  `fid` integer NOT NULL default 0,
+  `mdate` datetime NOT NULL default '0000-00-00 00:00:00',
+  `cdate` datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_shop_unique` on `user_shop` (`uid`, `fid`, `iid`)
+      ]]>
+      </string>
+      <key>role</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `role`
+(
+  `rid` integer PRIMARY KEY AUTOINCREMENT,
+  `name`  varchar(100) NOT NULL default 0,
+  `summary` varchar(200) NOT NULL default 0,
+  `level` integer NOT NULL default 0,
+  `life`  integer NOT NULL default 0,
+  `power` integer NOT NULL default 0,
+  `speed` float NOT NULL default "0.0",
+  `accuracy` float NOT NULL default "0.0",
+  `skill` varchar(200) NOT NULL default "",
+  `effect` varchar(200) NOT NULL default ""
+)
+      ]]>
+      </string>
+      <key>effect</key>
+      <string>
+        <![CDATA[
+CREATE TABLE effect( 
+  `eid` integer PRIMARY KEY AUTOINCREMENT,
+  `type` integer NOT NULL default 0,
+  `level` integer NOT NULL default 0,
+  `value` float NOT NULL default "0.0"
+)
+      ]]>
+      </string>
+      <key>effect_type</key>
+      <string>
+        <![CDATA[
+CREATE TABLE effect_type( 
+  `etid` integer PRIMARY KEY AUTOINCREMENT,
+  `name`  varchar(100) NOT NULL default 0,
+  `summary` varchar(200) NOT NULL default 0
+)
+      ]]>
+      </string>
+      <key>user_role</key>
+      <string>
+        <![CDATA[
+CREATE TABLE user_role( 
+  `uid` integer NOT NULL default 0,
+  `rid` integer NOT NULL default 0,
+  `amount` integer NOT NULL default 0,
+  `dead` integer NOT NULL default 0,
+  `mdate` datetime NOT NULL default '0000-00-00 00:00:00',
+  `cdate` datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_role_unique` on `user_role` (`uid`, `rid`)
+      ]]>
+      </string>
+      <key>train</key>
+      <string>
+        <![CDATA[
+CREATE TABLE train( 
+  `rid` integer  NOT NULL default 0,
+  `type` integer  NOT NULL default 0,
+  `origin_id` integer  NOT NULL default 0,
+  `amount` integer  NOT NULL default 0
+);CREATE UNIQUE INDEX `train_unique` on `train` (`rid`, `type`, `origin_id`)
+      ]]>
+      </string>
+      <key>user_crusade</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_crusade`( 
+  `uid` integer PRIMARY KEY,
+  `sid` integer  NOT NULL default 0,
+  `x` integer  NOT NULL default 0,
+  `y` integer  NOT NULL default 0,
+  `depart` integer  NOT NULL default 0,
+  `round` integer  NOT NULL default 0,
+  `mdate` datetime NOT NULL default '0000-00-00 00:00:00',
+  `cdate` datetime NOT NULL default '0000-00-00 00:00:00'
+)
+      ]]>
+      </string>
+      <key>user_crusade_drop</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_crusade_drop`( 
+  `uid` integer NOT NULL default 0,
+  `iid` integer  NOT NULL default 0,
+  `amount` integer  NOT NULL default 0
+);CREATE UNIQUE INDEX `user_crusade_drop_unique` on `user_crusade_drop` (`uid`, `iid`)
+      ]]>
+      </string>
+      <key>user_crusade_package</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_crusade_package`( 
+  `uid` integer NOT NULL default 0,
+  `iid` integer  NOT NULL default 0,
+  `amount` integer  NOT NULL default 0
+);CREATE UNIQUE INDEX `user_crusade_package_unique` on `user_crusade_package` (`uid`, `iid`)
+      ]]>
+      </string>
+      <key>user_crusade_carriage</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_crusade_carriage`( 
+  `uid` integer NOT NULL default 0,
+  `rid` integer  NOT NULL default 0,
+  `amount` integer  NOT NULL default 0
+);CREATE UNIQUE INDEX `user_crusade_carriage_unique` on `user_crusade_carriage` (`uid`, `rid`)
+      ]]>
+      </string>
+      <key>user_stage</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_stage`( 
+  `uid` integer NOT NULL default 0,
+  `sid` integer  NOT NULL default 0,
+  `nofog` integer NOT NULL default 0,
+  `first` integer NOT NULL default 1,	
+  `cdate` datetime NOT NULL default '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_stage_unique` on `user_stage` (`uid`, `sid`)
+      ]]>
+      </string>
+      <key>stage</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `stage`( 
+  `sid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL default "",
+  `summary` varchar(200) NOT NULL default "",
+  `level` integer NOT NULL default 0,
+  `width` integer NOT NULL default 0,
+  `height` integer NOT NULL default 0,
+  `encounter` float NOT NULL default "0.0",
+  `encounter_increase` float NOT NULL default 0
+)
+      ]]>
+      </string>
+      <key>background</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `background`( 
+  `bgid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL default "",
+  `summary` varchar(200) NOT NULL default ""
+)
+      ]]>
+      </string>
+      <key>field</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `field`( 
+  `fid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL default "",
+  `type` integer NOT NULL default 0,
+  `monster` integer NOT NULL default 0,
+  `img` varchar(200) NOT NULL default "",
+  `message_enter` varchar(200) NOT NULL default "",
+  `message_leave` varchar(200) NOT NULL default ""
+)
+      ]]>
+</string>
+      <key>field_key</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `field_key`( 
+  `fid` integer PRIMARY KEY AUTOINCREMENT,
+  `iid` integer NOT NULL default 0,
+  `num` integer NOT NULL default 0
+)
+      ]]>
+      </string>
+      <key>field_reward</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `field_reward`( 
+  `fid` integer NOT NULL default 0,
+  `iid` integer NOT NULL default 0,
+  `amount` integer NOT NULL default 0
+);CREATE UNIQUE INDEX `field_reward_unique` on `field_reward` (`fid`, `iid`)
+      ]]>
+      </string>
+      <key>field_monster</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `field_monster`( 
+  `fid` integer NOT NULL default 0,
+  `mid` integer NOT NULL default 0,
+  `sequence` integer NOT NULL default 0
+);CREATE UNIQUE INDEX `field_monster_unique` on `field_monster` (`fid`, `mid`,`sequence`)
+      ]]>
+      </string>
+      <key>arena_monster</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `arena_monster`( 
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `round` integer NOT NULL default 0,
+  `blood` integer  NOT NULL default 0,
+  `power` integer  NOT NULL default 0,
+  `speed` float NOT NULL default "0.0",
+  `accuracy` float NOT NULL default "0.0"
+)
+      ]]>
+      </string>
+      <key>arena_reward</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `arena_reward`( 
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `stage` integer NOT NULL default 0,
+  `round` integer NOT NULL default 0,
+  `blood` integer  NOT NULL default 0,
+  `power` integer  NOT NULL default 0,
+  `speed` float NOT NULL default "0.0",
+  `accuracy` float NOT NULL default "0.0"
+)
+      ]]>
+      </string>
+      <key>stage_field</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `stage_field`( 
+  `sid` integer NOT NULL default 0,
+  `fid` integer NOT NULL default 0,
+  `monster` integer NOT NULL default 0,
+  `coord_type` integer NOT NULL default 0,
+  `x` integer NOT NULL default 0,
+  `y` integer NOT NULL default 0,
+  `amount` integer  NOT NULL default 0
+)
+      ]]>
+      </string>
+      <key>user_stage_map</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_stage_map`( 
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `uid` integer NOT NULL default 0,
+  `sid` integer  NOT NULL default 0,
+  `bgid` integer  NOT NULL default 0,
+  `fid` integer  NOT NULL default 0,
+  `round` integer  NOT NULL default 0,
+  `visit` integer  NOT NULL default -1,
+  `fog` integer  NOT NULL default 0,
+  `x` integer  NOT NULL default 0,
+  `y` integer  NOT NULL default 0
+);CREATE UNIQUE INDEX `user_stage_map_unique` on `user_stage_map` (`uid`, `sid`, `x`, `y`)
+      ]]>
+      </string>
+      <key>monster</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `monster`( 
+  `mid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL default "",
+  `summary` varchar(200) NOT NULL default "",
+  `blood` integer  NOT NULL default 0,
+  `power` integer  NOT NULL default 0,
+  `speed` float NOT NULL default "0.0",
+  `accuracy` float NOT NULL default "0.0",
+  `img` varchar(200) NOT NULL default ""
+);CREATE UNIQUE INDEX `monster_unique` on `monster` (`mid`)
+      ]]>
+      </string>
+      <key>monster_drop</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `monster_drop`( 
+  `mid` integer NOT NULL default 0,
+  `iid` integer NOT NULL default 0,
+  `amount` integer  NOT NULL default 0,
+  `rate` float NOT NULL default "0.0",
+  `group` integer NOT NULL default 0
+);CREATE UNIQUE INDEX `monster_drop_unique` on `monster_drop` (`mid`, `iid`)
+      ]]>
+      </string>
+      <key>stage_monster</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `stage_monster`( 
+  `sid` integer NOT NULL default 0,
+  `mid` integer NOT NULL default 0
+);CREATE UNIQUE INDEX `stage_monster_unique` on `stage_monster` (`sid`, `mid`)
+      ]]>
+      </string>
+      <key>tavern</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `tavern`(
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `fid` integer NOT NULL default 0,
+  `rid` integer NOT NULL default 0
+);CREATE UNIQUE INDEX `tavern_unique` on `tavern` (`fid`, `rid`)
+        ]]>
+      </string>
+      <key>task</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `task`( 
+  `tid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL default "",
+  `board` varchar(200) NOT NULL default "",
+  `tips` varchar(200) NOT NULL default "",
+  `multiple` integer NOT NULL DEFAULT 0
+)
+        ]]>
+      </string>
+      <key>task_type</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `task_type`( 
+  `type` integer PRIMARY KEY,
+  `name` varchar(200) NOT NULL default ""
+)
+        ]]>
+      </string>
+      <key>task_button</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `task_button`( 
+  `tbid` integer PRIMARY KEY,
+  `name` varchar(200) NOT NULL default ""
+)
+        ]]>
+      </string>
+      <key>task_cause</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `task_cause`( 
+  `tid` integer NOT NULL default 0,
+  `type` integer NOT NULL default 0,
+  `type_id` integer NOT NULL default 0
+)
+        ]]>
+      </string>
+      <key>task_condition</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `task_condition`( 
+  `tid` integer NOT NULL default 0,
+  `type` integer NOT NULL default 0,
+  `type_id` integer NOT NULL default 0,
+  `num` integer NOT NULL default 0
+)
+        ]]>
+      </string>
+      <key>task_result</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `task_result`( 
+  `tid` integer NOT NULL default 0,
+  `type` integer NOT NULL default 0,
+  `type_id` integer NOT NULL default 0,
+  `num` integer NOT NULL default 0
+)
+        ]]>
+      </string>
+      <key>task_sudden</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `task_sudden`( 
+  `tid` integer PRIMARY KEY,
+  `type` integer NOT NULL default 0,
+  `weight` integer NOT NULL default 0,
+  `message` varchar(200) NOT NULL default "",
+  `cue` varchar(200) NOT NULL default "",
+  `iid` integer NOT NULL DEFAULT 0,
+  `num` integer NOT NULL DEFAULT 0,
+  `rmb` float NOT NULL DEFAULT '0.0'
+)
+        ]]>
+      </string>    
+      <key>user_task</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_task`( 
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `uid` integer NOT NULL default 0,
+  `tid` integer NOT NULL default 0,
+  `complete` integer NOT NULL default 0,
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_task_unique` on `user_task` (`tid`)
+        ]]>
+      </string>
+      <key>user_button</key>
+      <string>
+          <![CDATA[
+CREATE TABLE `user_button`(
+  `btid` integer NOT NULL default 0,
+  `mdate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_btn_unique` on `user_button` (`btid`)
+          ]]>
+      </string>
+      <key>chance</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `chance`( 
+  `cid` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL default "",
+  `summary` varchar(200) NOT NULL default "",
+  `board` varchar(200) NOT NULL default "",
+  `group` integer NOT NULL default 0,
+  `weight` integer NOT NULL default 0,
+  `date` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_event_unique` on `user_task` (`tid`)
+        ]]>
+      </string>
+      <key>user_board</key>
+      <string>
+          <![CDATA[
+CREATE TABLE `user_board`(
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `uid` integer NOT NULL DEFAULT 0,
+  `content` varchar(200) NOT NULL DEFAULT "",
+  `cdate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+)
+          ]]>
+      </string>
+      <key>mall</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `mall`(
+  `mall_id` integer PRIMARY KEY AUTOINCREMENT,
+  `name` varchar(200) NOT NULL DEFAULT "",
+  `summary` varchar(200) NOT NULL DEFAULT "",
+  `img` varchar(200) NOT NULL DEFAULT "",
+  `multiple` integer NOT NULL DEFAULT 0,
+  `iid` integer NOT NULL DEFAULT 0,
+  `cost` integer NOT NULL DEFAULT 0,
+  `parent_mall_id` integer NOT NULL DEFAULT 0
+);CREATE INDEX `mall_index` on `mall` (`parent_mall_id`)
+          ]]>
+      </string>
+      <key>user_mall</key>
+      <string>
+        <![CDATA[
+CREATE TABLE `user_mall`(
+  `id` integer PRIMARY KEY AUTOINCREMENT,
+  `uid` integer NOT NULL DEFAULT 0,
+  `mall_id` integer NOT NULL DEFAULT 0,
+  `cdate` datetime NOT NULL DEFAULT '0000-00-00 00:00:00'
+);CREATE UNIQUE INDEX `user_mall_unique` on `user_mall` (`uid`, `mall_id`)
+          ]]>
+      </string>
+    </dict>
+  </array>
+</plist>

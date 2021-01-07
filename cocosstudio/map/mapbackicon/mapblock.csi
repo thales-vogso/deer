@@ -1,0 +1,32 @@
+<PlistInfoProjectFile>
+  <PropertyGroup Name="mapblock" Type="Plist" ID="86a4961a-192e-4ef9-90c8-3e9a863c5ef5" Version="3.10.0.0" />
+  <Content ExportType="Png" SortAlgorithm="MaxRects" PicturePadding="0" AllowRotation="False" AllowAnySize="True" AllowTrim="True" ctype="PlistInfoData">
+    <ImageFiles>
+      <FilePathData Path="map/mapbackicon/map_fqbj_1.png" />
+      <FilePathData Path="map/mapbackicon/map_fqbj_2.png" />
+      <FilePathData Path="map/mapbackicon/map_arsl_1.png" />
+      <FilePathData Path="map/mapbackicon/map_arsl_2.png" />
+      <FilePathData Path="map/mapbackicon/map_crhs_1.png" />
+      <FilePathData Path="map/mapbackicon/map_crhs_2.png" />
+      <FilePathData Path="map/mapbackicon/map_hsbxxx_1.png" />
+      <FilePathData Path="map/mapbackicon/map_hsbxxx_2.png" />
+      <FilePathData Path="map/mapbackicon/map_ttyhmxx_1.png" />
+      <FilePathData Path="map/mapbackicon/map_ttyhmxx_2.png" />
+      <FilePathData Path="map/mapbackicon/map_rqzmwx_1.png" />
+      <FilePathData Path="map/mapbackicon/map_rqzmwx_2.png" />
+      <FilePathData Path="map/mapbackicon/map_ahjy_1.png" />
+      <FilePathData Path="map/mapbackicon/map_ahjy_2.png" />
+      <FilePathData Path="map/mapbackicon/map_ddksy_1.png" />
+      <FilePathData Path="map/mapbackicon/map_ddksy_2.png" />
+      <FilePathData Path="map/mapbackicon/map_mtldyj_1.png" />
+      <FilePathData Path="map/mapbackicon/map_mtldyj_2.png" />
+      <FilePathData Path="map/mapbackicon/map_ldsd_1.png" />
+      <FilePathData Path="map/mapbackicon/map_ldsd_2.png" />
+      <FilePathData Path="map/mapbackicon/map_osdg_1.png" />
+      <FilePathData Path="map/mapbackicon/map_osdg_2.png" />
+      <FilePathData Path="map/mapbackicon/map_glstsx_1.png" />
+      <FilePathData Path="map/mapbackicon/map_glstsx_2.png" />
+    </ImageFiles>
+    <MaxSize Width="256" Height="580" />
+  </Content>
+</PlistInfoProjectFile>
